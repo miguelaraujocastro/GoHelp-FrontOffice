@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <title>GoHelp - Doar No Evento</title>
+</head>
+<body style= "background-color: #41776C;">
+
+    
+
+
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <section class="donate-section-evento">
+                <div class="container">
+                    <div class="doarNoEvento row col-md-10 mx-auto">
+                        <!-- Coluna para Imagem e Lista -->
+                        <div class="col-md-4 imagemInformacoesEventoDoar">
+                            <div class="imagem-evento d-flex justify-content-center">
+                                <img id="imagem-evento-doar" alt="" class="img-fluid">
+                            </div>
+                            <h5 id="titulo-evento-doar" class="mt-3">Título do evento</h5>
+                            <div class="lista-doacao-evento mt-3">
+                                <ul class="custom-list">
+                                    <li class="custom-list-item d-flex">
+                                        <i class="bi bi-check custom-text-box-icon me-2"></i>
+                                        <div class="custom-text-size">Data:</div>
+                                        <div class="info-direita custom-text-size" id="data-evento-doar"></div>
+                                    </li>
+                                    <li class="custom-list-item d-flex">
+                                        <i class="bi bi-check custom-text-box-icon me-2"></i>
+                                        <div class="custom-text-size">Local:</div>
+                                        <div class="info-direita custom-text-size" id="local-evento-doar"></div>
+                                    </li>
+                                    <li class="custom-list-item d-flex">
+                                        <i class="bi bi-check custom-text-box-icon me-2"></i>
+                                        <div class="custom-text-size">Tipo:</div>
+                                        <div class="info-direita custom-text-size" id="tipo-evento-doar"></div>
+                                    </li>
+                                    <li class="custom-list-item d-flex">
+                                        <i class="bi bi-check custom-text-box-icon me-2"></i>
+                                        <div class="custom-text-size">Duração:</div>
+                                        <div class="info-direita custom-text-size" id="duracao-evento-doar"></div>
+                                    </li>
+                                    <li class="custom-list-item d-flex">
+                                        <i class="bi bi-check custom-text-box-icon me-2"></i>
+                                        <div class="custom-text-size">Preço:</div>
+                                        <div class="info-direita custom-text-size" id="preco-evento-doar"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <!-- Coluna para Formulário de Doação -->
+                        <div class="col-md-8 formularioDoacaoNoEvento">
+                            <form class="custom-form donate-form limit-height "action="#" method="get" role="form">
+                                <h3 class="mb-4">Faz uma Doação</h3>
+                                <p class="mb-4">Indica-nos o que irás doar no local do evento<p>
+                                <div class="col-lg-12 col-12">
+                                    <h5 class="mb-3">Livros</h5>
+                                    <p class="mb-4">Desejas doar livros?</p>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioLivros" id="flexRadioDefault1" value="sim">
+                                            <label class="form-check-label" for="flexRadioDefault1"><a>Sim</a></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioLivros" id="flexRadioDefault2" value="nao" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2"><a>Não</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="input-doacao-livros container" id="doacao-livros" style="display: none;">
+                                    <ol style="margin-top: 30px;" id="livros-list">
+                                    </ol>
+                                    <div class="botoesAddRemLivros">
+                                        <button class="adicionar livro" id="addLivroBtn">+</button>
+                                        <button class="remover livro" id="removeLivroBtn">-</button>
+                                    </div>
+                                </div>
+    
+
+
+        
+        
+                                    <div class="col-lg-12 col-12 materiais-doar">
+                                        <h5 class="mb-3">Materiais</h5>
+                                        <p class="mb-4">Desejas doar algum material?</p>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioMateriais" id="flexRadioDefault1-material" value="sim">
+                                                <label class="form-check-label" for="flexRadioDefault1-material"><a>Sim</a></label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioMateriais" id="flexRadioDefault2-material" value="nao" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2-material"><a>Não</a></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="input-doacao-materiais container" id="doacao-materiais" style="display: none;">
+                                        <ol style="margin-top: 30px;" id="material-list">
+                                            
+                                        </ol>
+                                        <div class="botoesAddRemMateriais">
+                                            <button class="adicionar" id="addMaterialBtn">+</button>
+                                            <button class="remover" id="removeMaterialBtn">-</button>
+                                        </div>
+                                    </div>
+                                     
+                                     <div class="row justify-content-center">
+                                        <div class="col-lg-6 col-md-12 col-12 mt-4 d-flex justify-content-center">
+                                            <button class="btn-evento custom-btn" data-bs-toggle="modal" id="finalizarDoarEventoInscricao">
+                                                Finalizar Inscrição
+                                            </button>
+                                        </div>
+                                    </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <div class="site-footer-bottom"  style="position: fixed; bottom: 0; width: 100%;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-7 col-12 text-center">
+                    <p class="copyright-text mb-0">Copyright © 2024 <a href="#">GoHelp</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="modal" tabindex="-1" id="confirmacaoModalInscricaoEventoDoar">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirmação de Inscrição</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Tens a certeza de que desejas finalizar a inscrição?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-modal btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn-modal btn-submeter" data-bs-toggle="modal" id="confirmarInscricaoEventoDoar">Finalizar Inscrição</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" id="InscritoDoacaoEvento">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirmação de Doação e Inscrição</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>Doação registada e Inscrição Realizada com Sucesso!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn-modal btn-submeter" href="portfolio.html">Voltar ao Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" id="inscricaoJaRealizadaDoacao">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirmação de Inscrição</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>Já te encontras inscrito neste evento e não é possível fazeres doações.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn-modal btn-submeter" href="portfolio.html">Voltar ao Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="js/tipoDoacao.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/doarNoEvento.js"></script>
+        <script src="js/localStorage.js"></script>
+</body>
+</html>

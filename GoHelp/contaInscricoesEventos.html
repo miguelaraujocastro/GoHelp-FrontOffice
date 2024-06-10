@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GoHelp - Conta</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+
+    
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-geo-alt me-2"></i>
+                        Azurém, 4800-058, Guimarães, Portugal
+                    </p>
+
+                    <p class="d-flex mb-0">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@company.com">
+                            gohelporganizacao@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-12 ms-auto d-lg-block d-md-block d-sm-block d-flex">
+                    <ul class="social-icon">
+                        <li class="social-icon-item" id="userLoginStatus">
+                            <!-- conteudo do login gerado dinamicamente -->
+                            <a href="login.html" class="social-icon-link bi-person" id="loginLink">  Iniciar Sessão ou Registar-se</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" class="logo img-fluid" alt="">
+                <span>
+                    GoHelp
+                    <small>Organização de Eventos Culturais</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html#section_1">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html#section_2">Sobre Nós</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html#section_3">Serviços</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link click-scroll dropdown-toggle" href=""
+                            id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Agenda</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="portfolio.html">Pórtfolio</a></li>
+                            <li><a class="dropdown-item" href="programacaoCompleta.html">Programação</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html#section_4">Junta-te a Nós</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html#section_6">Contacto</a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn btn" href="doacaoMonetaria.html">Doar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="section-conta-header" id="section_Conta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 contaOla">
+                        <h4>OLÁ <script>
+                            var loginData = JSON.parse(localStorage.getItem("login"));
+                            var name = loginData.name;
+                            document.write(name.toUpperCase());
+                        </script></h4>
+                    </div>
+                    <div class="col-md-6 contaTitulo">
+                        <h4>A TUA CONTA GOHELP</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-conta-titulos-opcoes" id="section_Conta_Titulos_Opcoes">
+                
+                <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+                    <div class="container justify-content-center">
+
+                            <ul class="navbar-nav ">
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll active" href="">Atividade</a>
+                                </li>
+            
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="contaInfo.html">Conta</a>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                </nav>
+                
+        </section>
+
+        <section class="section-conta-opcoes" id="section_Conta_Opcoes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 conteudo-conta navegar-opcoes h-100">
+                        <h6>A TUA ATIVIDADE</h6>
+                        <div class="list-group">
+                            <a href="contaPedidosEventos.html" class="list-group-item"><h7>Pedidos de Eventos</h7> <i class="bi bi-chevron-right"></i></a>
+                            <a href="contaPedidosTrabalho.html" class="list-group-item"><h7>Pedidos de Trabalho</h7> <i class="bi bi-chevron-right"></i></a>
+                            <a href="contaInscricoesEventos.html" class="list-group-item" style="font-weight: bold;"><h7>Inscrições dos Eventos</h7> <i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 conteudo-conta inscricoes-tabela-eventos ms-auto" style="max-height: 740px; overflow-y: auto;" id="conteudoInscricoesEventos">
+                        <h6>AS MINHAS INSCRIÇÕES DOS EVENTOS</h6>
+
+                        <div id="mensagemSemInscricoes" class="mt-4" style="display: none;">Não fez nenhuma inscrição.</div>
+
+                        <div class="table-responsive">
+                            <table class="table inscricoesEventosTabela" id="crudTableInscricoes">
+                                <thead>
+                                    <tr>
+                                        <th>Data da Inscrição</th>
+                                        <th>Titulo do Evento</th>
+                                        <th>Tipo</th>
+                                        <th>Local</th>
+                                        <th>Detalhes</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="conteudo-tabela-inscricoes-eventos"></tbody>
+                            </table>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-4 d-flex -items-centaligner">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" class="logo img-fluid" alt="GoHelp">
+                        <span>
+                            GoHelp
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3">Links de Acesso Rápido</h5>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="index.html#top" class="footer-menu-link">Início</a></li>
+
+                        <li class="footer-menu-item"><a href="index.html#section_2" class="footer-menu-link">Sobre Nós</a></li>
+
+                        <li class="footer-menu-item"><a href="index.html#section_3" class="footer-menu-link">Serviços</a></li>
+
+                        <li class="footer-menu-item"><a href="portfolio.html" class="footer-menu-link">Agenda</a></li>
+
+                        <li class="footer-menu-item"><a href="index.html#section_4" class="footer-menu-link">Junta-te a Nós</a></li>
+
+                        <li class="footer-menu-item"><a href="index.html#section_6" class="footer-menu-link">Contacto</a></li>
+
+                        <li class="footer-menu-item"><a href="doacaoMonetaria.html" class="footer-menu-link">Doar</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                    <h5 class="site-footer-title mb-3">Informação de Contacto</h5>
+
+                    <p class="text-white d-flex">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@yourgmail.com" target="_blank" class="site-footer-link">
+                            gohelporganizacao@gmail.com
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex mt-3">
+                        <i class="bi-geo-alt me-2"></i>
+                        Azurém, 4800-058, Guimarães, Portugal
+                    </p>
+
+                    <a href="https://maps.app.goo.gl/y2TNJFWE5wz98Gbs9" target="_blank" class="custom-btn btn mt-3">Obter Direção</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <p class="copyright-text mb-0">Copyright © 2024 <a href="#">GoHelp</a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-end align-items-center mx-auto">
+                        <ul class="social-icon">
+
+                            <li class="social-icon-item">
+                                <a href="#top" class="social-icon-link bi-arrow-up"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="inscricao-modal-evento modal fade" id="detalhesInscricoesEventos" tabindex="-1" aria-labelledby="detalhesInscricoesEventosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detalhesInscricoesEventosLabel">Detalhes da Inscrição</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="imagem-inscricao-modal-evento">
+                                <img id="imagem-inscricao-modal-evento" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6 lista-detalhes">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Titulo do Evento:</strong> <div id="titulo-evento-info-modal"></div></li>
+                                <li class="list-group-item"><strong>Descrição do Evento:</strong> <div id="descricao-evento-info-modal"></div></li>
+                                <li class="list-group-item"><strong>Data do Evento:</strong> <div id="data-evento-info-modal"></div></li>
+                                <li class="list-group-item"><strong>Local do Evento:</strong> <div id="local-evento-info-modal"></div></li>
+                                <li class="list-group-item"><strong>Preço da Inscrição:</strong> <div id="preco-inscricao-info-modal"></div></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 doacoes-inscricao-modal">
+                            <div class="titulo-doacoes-modal-livros">
+                                <strong>Doações de Livros:</strong>
+                            </div>
+                                <ul class="list-group list-group-flush" id="doacoes-livros-lista-modal"></ul>
+                            <div class="titulo-doacoes-modal-materiais">
+                                <strong>Doações de Materiais:</strong>
+                            </div>
+                                <ul class="list-group list-group-flush" id="doacoes-materiais-lista-modal"></ul>                          
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type of="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/preencherTabelaPedido.js"></script>
+    <script src="js/localStorage.js"></script>
+</body>
+
+</html>

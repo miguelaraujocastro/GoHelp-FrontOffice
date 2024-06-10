@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Registo</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="js/registar.js"></script>
+</head>
+
+<body class="body-registo">
+    <main>
+        <section class="section login" id="section_Registar">
+            <div class="login-container">
+                <div class="row">
+                    <div class="brand-container">
+                        <a class="navbar-brand" style="display: flex; align-items: center;">
+                            <img src="images/logo.png" class="logo img-fluid" alt="GoHelp">
+                            <!-- Texto ao lado do logo -->
+                            <div style="display: flex; flex-direction: column; margin-left: 10px;">
+                                <span class="gohelp">GoHelp</span>
+                                <small>Organização de Eventos Culturais</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="form-content">
+
+                        <div class="google-signin-container">
+                            <!-- texto à esquerda do botão -->
+                            <div class="google-signin-text" style="flex-grow: 1;">
+                                <p style="margin: 0;">Clique no ícone para se registar com o Google</p>
+                            </div>
+                            <!-- Botão do Google -->
+                            <div class="d-flex justify-content-center" id="buttonDivRegistar" style="flex-grow: 0;"></div>
+                        </div>
+        
+                        <div class="login form-link d-flex justify-content-center" style="margin-top: 60px; margin-bottom: 20px;">
+                            <span>Já tens uma conta registada? <a href="login.html" class="registar-link"><strong>Login</strong></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" tabindex="-1" id="registoJaEfetuado">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registo já efetuado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este email já se encontra registado.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-modal btn-cancelar" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="registoSucesso">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registo com Sucesso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Conta Registada com Sucesso.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-modal btn-cancelar" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

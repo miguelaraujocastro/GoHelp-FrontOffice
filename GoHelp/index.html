@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GoHelp</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    
+
+</head>
+
+<body id="section_1">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-geo-alt me-2"></i>
+                        <a href="https://maps.app.goo.gl/y2TNJFWE5wz98Gbs9" target="_blank">
+                            Azurém, 4800-058, Guimarães, Portugal
+                        </a>
+                    </p>
+
+                    <p class="d-flex mb-0">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:gohelporganizacao@gmail.com" target="_blank">
+                            gohelporganizacao@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-12 ms-auto d-lg-block d-md-block d-sm-block d-flex">
+                    <ul class="social-icon">
+                        <li class="social-icon-item" id="userLoginStatus">
+                            <!-- conteudo do login gerado dinamicamente -->
+                            <a href="login.html" class="social-icon-link bi-person" id="loginLink">  Iniciar Sessão ou Registar-se</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" class="logo img-fluid" alt="GoHelp">
+                <span>
+                    GoHelp
+                    <small>Organização de Eventos Culturais</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#top">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_2">Sobre Nós</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_3">Serviços</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link click-scroll dropdown-toggle" href=""
+                            id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Agenda</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="portfolio.html">Portfólio</a></li>
+                            <li><a class="dropdown-item" href="programacaoCompleta.html">Programação</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4">Junta-te a Nós</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_6">Contacto</a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn btn" href="doacaoMonetaria.html">Doar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero-section hero-section-full-height">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-12 p-0">
+                        <div id="hero-slide" class="carousel carousel-fade slide unique-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/slide/doarLivro.png" class="carousel-image img-fluid" alt="...">
+                                    <div class="carousel-caption d-flex flex-column justify-content-end">
+                                        <h1>Adere à GoHelp</h1>
+                                        <p>Junta-te a nós para fazer a diferença</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/slide/concert-background-t7rzcc096yvm7l7b-transformed.jpeg" class="carousel-image img-fluid" alt="...">
+                                    <div class="carousel-caption d-flex flex-column justify-content-end">
+                                        <h1>Cultura</h1>
+                                        <p>Explore novas perspectivas culturais</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#hero-slide"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-12 text-center mx-auto">
+                        <h2 class="mb-5">Bem-vindo à GoHelp</h2>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href="#section_4" class="d-block">
+                                <img src="images/icons/hands.png" class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text">Torna-te Um de <strong>Nós</strong></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href="portfolio.html" class="d-block">
+                                <img src="images/icons/eventosIcon.png" class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text">Vê os Nossos <strong>Eventos</strong></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href="portfolio.html#section_Organizar" class="d-block">
+                                <img src="images/icons/calendar.png" class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text">Organiza <strong>Eventos</strong></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href="doacaoMonetaria.html" class="d-block">
+                                <img src="images/icons/receive.png" class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text">Faz Uma <strong>Doação</strong></p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding section-bg" id="section_2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                        <img src="images/slide/doarLivro.png"
+                            class="custom-text-box-image img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="custom-text-box">
+                            <h2 class="mb-2">A Nossa História</h2>
+
+                            <h5 class="mb-3">GoHelp, Organização de Eventos Culturais</h5>
+
+                            <p class="mb-0" style="text-align: justify;">De forma a conectar pessoas e a promover o bem-estar comunitário, a GoHelp surgiu para simplificar 
+                                a organização de eventos culturais, de forma criativa, inovadora e de qualidade.</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-8 col-md-6 col-12">
+                                <div class="custom-text-box mb-lg-0">
+                                    <h5 class="mb-3">A Nossa Missão</h5>
+
+                                    <p style="text-align: justify;">Facilitar a conexão nas comunidades, organizando diversos eventos 
+                                        de modo a promover a união, solidariedade e um impacto cultural significativo.</p>
+
+                                        <ul class="custom-list-missao mt-2">
+                                            <li class="custom-list-item-missao d-flex">
+                                                <i class="bi-check custom-text-box-icon me-2"></i>
+                                                Cultura
+                                            </li>
+                        
+                                            <li class="custom-list-item-missao d-flex">
+                                                <i class="bi-check custom-text-box-icon me-2"></i>
+                                                União
+                                            </li>
+                        
+                                            <li class="custom-list-item-missao d-flex">
+                                                <i class="bi-check custom-text-box-icon me-2"></i>
+                                                Diversão
+                                            </li>
+                                        </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">
+                                    <div class="counter-thumb">
+                                        <div class="d-flex">
+                                            <span class="counter-number" id="numero-total-colaboradores"></span>
+                                            <span class="counter-number-text"></span>
+                                        </div>
+
+                                        <span class="counter-text">Profissionais</span>
+                                    </div>
+
+                                    <div class="counter-thumb mt-4">
+                                        <div class="d-flex">
+                                            <span class="counter-number" id="numero-total-eventos"></span>
+                                        </div>
+
+                                        <span class="counter-text">Eventos Memoráveis</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section section-padding section-bg">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-5 col-12 ms-auto">
+                        <h2 class="mb-0">Faz a diferença. <br> Promove a cultura e a união da comunidade.</h2>
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                        <a href="doacaoMonetaria.html" class="me-4">Faz Uma Doação</a>
+
+                        <a href="#section_4" class="custom-btn btn smoothscroll">Torna-te Um de Nós</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-padding" id="section_3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 text-center mb-4">
+                        <h2>Serviços</h2>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block-wrap">
+                            <img src="images/causes/livros.png"
+                                class="custom-block-image img-fluid" alt="">
+
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+                                    <h5 class="mb-3">Feiras de Livros</h5>
+
+                                    <p style="text-align: justify;">Explora um mundo de inúmeras possibilidades literárias, em eventos memoráveis e com boa organização.</p>
+                            
+                                    <div class="progress mt-4">
+                                        <div class="progress-bar w-100" role="progressbar" aria-valuenow="100"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center my-2">
+                                        <p class="mb-0">
+                                            <strong>Número Total de Eventos:</strong>
+                                            100
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <a href="portfolio.html#sectionEventosLivros" class="custom-btn btn">Conheçe todos e desfruta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block-wrap">
+                            <img src="images/causes/concertos.png"
+                                class="custom-block-image img-fluid" alt="">
+
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+                                    <h5 class="mb-3">Concertos</h5>
+
+                                    <p style="text-align: justify;">Desfruta de momentos musicais únicos, alinhados com um planeamento estratégico e criativo.</p>
+
+                                    <div class="progress mt-4">
+                                        <div class="progress-bar w-100" role="progressbar" aria-valuenow="100"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center my-2">
+                                        <p class="mb-0">
+                                            <strong>Número Total de Eventos:</strong>
+                                            100
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <a href="portfolio.html#sectionEventosConcertos" class="custom-btn btn">Conheçe todos e desfruta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block-wrap">
+                            <img src="images/causes/teatro.png"
+                                class="custom-block-image img-fluid" alt="">
+
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+                                    <h5 class="mb-3">Teatros</h5>
+
+                                    <p style="text-align: justify;">Assiste a eventos teatrais de enorme imaginação e qualidade, proporcionados pelos nossos serviços.
+                                    </p>
+
+                                    <div class="progress mt-4">
+                                        <div class="progress-bar w-100" role="progressbar" aria-valuenow="100"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center my-2">
+                                        <p class="mb-0">
+                                            <strong>Número Total de Eventos:</strong>
+                                            100
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <a href="portfolio.html#sectionEventosTeatro" class="custom-btn btn">Conheçe todos e desfruta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="pedido-trabalho-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-4">Trabalhar na GoHelp</h2>
+
+                        <form class="custom-form pedido-trabalho-form mb-5 mb-lg-0" action="#" method="post" role="form" id="pedidoTrabalhoForm">
+                            <h3 class="mb-4">Torna-te Um de Nós Hoje</h3>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <input type="text" name="pedido-trabalho-name" id="pedido-trabalho-name" class="form-control"
+                                        placeholder="Nome" required readonly>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <input type="email" name="pedido-trabalho-email" id="pedido-trabalho-email"
+                                        pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email"
+                                        required readonly>
+                                </div>
+
+                                <div class="col-lg-12 col-12">
+                                    <input type="text" name="pedido-trabalho-subject" id="pedido-trabalho-subject"
+                                        class="form-control" placeholder="Assunto" required>
+                                </div>
+
+                                <div class="col-lg-12 col-12">
+                                    <input type="number" name="pedido-trabalho-numero-tel" id="pedido-trabalho-numero-tel"
+                                        class="form-control" placeholder="Número de Telemóvel" required max="999999999">
+                                </div>
+                                  
+                            </div>
+                            
+                            <div class="col-lg-12 col-12">
+                                    <label for="formFile" class="form-label mb-0 mt-4"><h6>Introduzir Curriculum Vitae</h6></label>
+                                    <input class="form-control" type="file" id="formFile" accept=".pdf" required>
+                            </div>
+
+                            <textarea name="pedido-trabalho-message" rows="3" class="form-control mt-5" id="pedido-trabalho-message"
+                                placeholder="Comentário (Opcional)"></textarea>
+
+                            <button type="submit" class="form-control">Submeter</button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <img src="images/imagensParaEventos/torna_te_um_de_nos.jpg"
+                            class="pedido-trabalho-image img-fluid" alt="">
+
+                        <div class="custom-block-body text-center">
+                            <h4 class="text-white mt-lg-3 mb-lg-3">Sobre Trabalhar na GoHelp</h4>
+
+                            <p class="text-white">Junta-te a uma equipa dedicada que valoriza a inovação, a colaboração e o impacto social. 
+                                Aqui, terás a oportunidade de fazer a diferença e crescer profissionalmente, dentro de um ambiente dinâmico e acolhedor.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding" id="section_6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-12 mx-auto">
+
+                        <form class="custom-form contact-form mb-5 mb-lg-0" action="https://api.staticforms.xyz/submit" method="post" role="form" id="contactForm">
+                            <h2 class="mb-4">Contacta-nos</h2>
+                            
+                            <p class="mb-4">Ou, podes enviar email diretamente para:
+                                <a href="mailto:gohelporganizacao@gmail.com" target="_blank">gohelporganizacao@gmail.com</a>
+                            </p>
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <input type="text" name="name" class="form-control" placeholder="Nome" required>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-md-12 col-12">
+                                <input type="email" name="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required>
+                            </div>
+                        
+                            <textarea name="message" rows="6" class="form-control" placeholder="Em que podemos ajudar-te?" required></textarea>
+                        
+                            <button type="submit" class="form-control">Submeter</button>
+                            <input type="hidden" name="accessKey" value="74122321-4c5c-4790-9ec8-9dcf1505295b">
+                            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/agradecimento.html">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-4 d-flex align-items-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" class="logo img-fluid" alt="GoHelp">
+                        <span>
+                            GoHelp
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3">Links de Acesso Rápido</h5>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="#top" class="footer-menu-link">Início</a></li>
+
+                        <li class="footer-menu-item"><a href="#section_2" class="footer-menu-link">Sobre Nós</a></li>
+
+                        <li class="footer-menu-item"><a href="#section_3" class="footer-menu-link">Serviços</a></li>
+
+                        <li class="footer-menu-item"><a href="portfolio.html" class="footer-menu-link">Agenda</a></li>
+
+                        <li class="footer-menu-item"><a href="#section_4" class="footer-menu-link">Junta-te a Nós</a></li>
+
+                        <li class="footer-menu-item"><a href="#section_6" class="footer-menu-link">Contacto</a></li>
+
+                        <li class="footer-menu-item"><a href="doacaoMonetaria.html" class="footer-menu-link">Doar</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                    <h5 class="site-footer-title mb-3">Informação de Contacto</h5>
+
+                    <p class="text-white d-flex">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@yourgmail.com" target="_blank" class="site-footer-link">
+                            gohelporganizacao@gmail.com
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex mt-3">
+                        <i class="bi-geo-alt me-2"></i>
+                        Azurém, 4800-058, Guimarães, Portugal
+                    </p>
+
+                    <a href="https://maps.app.goo.gl/y2TNJFWE5wz98Gbs9" target="_blank" class="custom-btn btn mt-3">Obter Direção</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <p class="copyright-text mb-0">Copyright © 2024 <a href="#">GoHelp</a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-end align-items-center mx-auto">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#top" class="social-icon-link bi-arrow-up"></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="confirmationModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmação de Submissão</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tens a certeza de que desejas submeter?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-modal btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn-modal btn-submeter" id="confirmSubmitButton">Submeter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="pedidoTrabalhoRealizado">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmação de Pedido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Pedido Realizado com Sucesso!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-modal btn-cancelar" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="loginNaoEfetuado">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login não efetuado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Não efetuaste o login. Por favor efetua.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-modal btn-cancelar" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/informacaoIndex.js"></script>
+    <script src="js/localStorage.js"></script>
+</body>
+
+</html>
